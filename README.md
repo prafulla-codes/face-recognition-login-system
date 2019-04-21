@@ -10,6 +10,9 @@
 <li> Python - face_recognition - https://github.com/ageitgey/face_recognition </li>
 <li> XAMPP - https://www.apachefriends.org/download.html </li>
 <li> Bootstrap - https://getbootstrap.com/ </li>
-<li> CGI </li> 
+<li> CGI </li>
+</ul>
+<hr/>
+<h2> Working </h2>
 <hr/>
 
