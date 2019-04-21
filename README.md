@@ -24,6 +24,10 @@
   <img src='Preview/n2.png'><br>
   </b>
   </ol>
-Optional -  *you can create a seperate registration form for students, where they may upload their picture and the picture gets stored as (email_address).jpg in the 'students' folder* 
+Optional -  <i>you can create a seperate registration form for students, where they may upload their picture and the picture gets stored as (email_address).jpg in the 'students' folder</i>
+
+<strong> Note </strong>  - These files must be hosted on XAMPP Apache server or other server, else login.py will not work.
+
+
 <hr/>
 
