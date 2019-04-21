@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body onload="init()">
+<nav class="navbar text-white navbar-dark bg-dark">
+<a href="#" class="navbar-brand">
+Login 
+</a>
+</nav>
+     <p>
+
+    </p>
+    <div class="container text-center bordered" style="width:280px">
+    <form action="login.py" method="post" enctype="multipart/form-data">
+    <video onclick="snapshot(this);" width=250 height=250 id="video" controls autoplay></video>
+    <br>
+    <input type="email" placeholder="Email" name="email" class="form-control form-control-sm text-left">
+    <br>
+    <input type="text" accept="image/png" hidden name="current_image" id="current_image">
+       <button  onclick="login()" class="btn-dark" value="login">Login </button>
+       <br>
+       <br>
+    </form>
+    </div>
+      <canvas  id="myCanvas" width="400" height="350" hidden></canvas>  
+  </body>
+  <script>
+      //--------------------
+      // GET USER MEDIA CODE
+      //--------------------
+          navigator.getUserMedia = ( navigator.getUserMedia ||
+                             navigator.webkitGetUserMedia ||
+                             navigator.mozGetUserMedia ||
+                             navigator.msGetUserMedia);
+
+      var video;
+      var webcamStream;
+        if (navigator.getUserMedia) {
+           navigator.getUserMedia (
+
+              // constraints
+              {
+                 video: true,
+                 audio: false
+              },
+
+              // successCallback
+              function(localMediaStream) {
+                  video = document.querySelector('video');
+                 video.srcObject = localMediaStream;
+                 webcamStream = localMediaStream;
+              },
+
+              // errorCallback
+              function(err) {
+                 console.log("The following error occured: " + err);
+              }
+           );
+        } else {
+           console.log("getUserMedia not supported");
+        }  
+
+ 
+     
+      var canvas, ctx;
+
+      function init() {
+        // Get the canvas and obtain a context for
+        // drawing in it
+mcanvas = document.getElementById("myCanvas");
+        ctx = mcanvas.getContext('2d');
+      }
+
+      function login() {
+         // Draws current image from the video element into the canvas
+        ctx.drawImage(video,0,0,mcanvas.width,mcanvas.height);
+        var dataURL = mcanvas.toDataURL('image/png');
+         document.getElementById("current_image").value=dataURL;
+
+      }
+
+  </script>
+</html>
