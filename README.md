@@ -1,8 +1,8 @@
 <h1 align=center> Face Recognition Login System </h1>
 <hr/>
 <h2>Preview</h2>
-<img src="Preview/preview.png" width="100%">
-<img src="Preview/preview2.png">
+<img src="Preview/p1.png">
+<img src="Preview/p2.png">
 <hr/>
 <h2> Tools & Libraries Used </h2>
 <hr/>
