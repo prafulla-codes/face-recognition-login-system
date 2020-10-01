@@ -30,7 +30,7 @@
   <img src='Preview/n2.png'><br>
   </b>
   </ol>
-Optional -  <i>you can create a seperate registration form for students, where they may upload their picture and the picture gets stored as (email_address).jpg in the 'students' folder</i>
+<b>Optional -</b> <i>you can create a seperate registration form for students, where they may upload their picture and the picture gets stored as (email_address).jpg in the 'students' folder.</i>
 
 
 
