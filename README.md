@@ -22,14 +22,23 @@
 
 <hr/>
 <h2> Working </h2>
-<ol>
-  <b>
-  <li> Put all the images of students in the 'students' folder </li>
+
+- Install Python
+- Install XAMPP
+- Navigate to `htdocs` fodler and clone this project.
+- Navigate to `htdocs/face-recognition-login-system` and execute the following command `pip install -r requirements.txt`
+- Navigate to `xampp/apache/config` and modify the `httpd.conf` file by adding  
+```conf
+Options Indexes FollowSymLinks Includes ExecCGI
+AddHandler cgi-script .py .cgi .pl .asp
+```   
+at the end of the file. Then save & exit
+- Then run XAMPP & go to `localhost/face-recognition-login-system/login.html`
+- Put all the images of students in the 'students' folder 
   <img src='Preview/n1.png'>
-  <li> Pictures must be in the format (email_address_of_student).jpg </li>
-  <img src='Preview/n2.png'><br>
-  </b>
-  </ol>
+- Pictures must be in the format (email_address_of_student).jpg 
+ 
+ <img src='Preview/n2.png'><br>
 <b>Optional -</b> <i>you can create a seperate registration form for students, where they may upload their picture and the picture gets stored as (email_address).jpg in the 'students' folder.</i>
 
 
