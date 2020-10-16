@@ -1,4 +1,4 @@
-#!F:/Softwares/Anaconda 3/python.exe
+#! C:\Users\PRAFULLA\AppData\Local\Programs\Python\Python39\python.exe
 import cgi
 from base64 import b64decode
 import face_recognition

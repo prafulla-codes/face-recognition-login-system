@@ -1,0 +1,3 @@
+cmake
+wheel
+face_recognition
