@@ -26,6 +26,7 @@
 - Install Python
 - Install XAMPP
 - Navigate to `htdocs` fodler and clone this project.
+- Open `login.py` and make sure to replace the top comment `#! C:\Users\PRAFULLA\AppData\Local\Programs\Python\Python39\python.exe` with your python path.
 - Navigate to `htdocs/face-recognition-login-system` and execute the following command `pip install -r requirements.txt`
 - Navigate to `xampp/apache/config` and modify the `httpd.conf` file by adding  
 ```conf
@@ -40,8 +41,6 @@ at the end of the file. Then save & exit
  
  <img src='Preview/n2.png'><br>
 <b>Optional -</b> <i>you can create a seperate registration form for students, where they may upload their picture and the picture gets stored as (email_address).jpg in the 'students' folder.</i>
-
-
 
 <hr/>
 
