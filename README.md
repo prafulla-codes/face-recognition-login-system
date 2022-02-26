@@ -44,3 +44,38 @@ at the end of the file. Then save & exit
 
 <hr/>
 
+<h2> Making it work for Windows </h2>
+<p>
+Go to the python's installed location , in my case it was (C:\Python39) and right click on the 
+python39 folder and go to security tab and give "Full Control" permission to users
+</p>
+</br/>
+<p>
+And then go the scripts folder in python's installed path
+(C:\Python39\Scripts)
+</p>
+and run the below commands in that folder 
+<br/>
+
+Command 1 : `C:\python39\python.exe -m pip install --upgrade pip --user`
+
+In the above command replace the exe path with your path
+
+Comand 2 : `pip install cmake --ignore-installed`
+
+Command 3 : `pip install dlib --ignore-installed`
+
+Command 4 : `pip install face_recognition --ignore-installed`
+
+Then try to restart the XAMPP Server it should work.
+
+If it did not work, try installing below tools on windows
+- CMAKE
+- Visual Studio with CMAKE Build tools installed
+
+Also to for debugging, ensure to check Apache Error Logs
+![image](https://user-images.githubusercontent.com/36433104/155829373-9b1482f4-f657-4f85-ae76-ff20bcccb2eb.png)
+
+Kindly follow the below Reference issues in case you are stuck 
+https://github.com/ageitgey/face_recognition/issues/1016
+https://stackoverflow.com/questions/51912999/could-not-install-packages-due-to-an-environmenterror-winerror-5-access-is-de
